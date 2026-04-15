@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,8 +13,12 @@
   </head>
   <body>
     <header>
-      <a href="index.html" title="voltar para a pagina inicial"><img src="./favicon_white.png" alt="Logo da Jornada Viagens na cor preta"/></a>
-      <img src="menu.png" alt="ícone do menu">
+      <a class="logo" href="index.html" title="voltar para a pagina inicial"><img src="./favicon_white.png" alt="Logo da Jornada Viagens na cor preta"/></a>
+      <div class="navigation-menu">
+        <label for="menu">
+          <img src="./img/menu.png" alt="menu">
+        </label>
+      <input type="checkbox" id="menu" hidden />
       <nav>
         <ul>
           <li><a href="blog.html" target="_blank" title="acessar blog">Blog</a></li>
@@ -22,6 +26,7 @@
           <li><a href="contato.html" target="_blank" title="acessar Contato">Contato</a></li>
         </ul>
       </nav>
+      </div>
     </header>
   </body>
 </html>
