@@ -1,5 +1,7 @@
 .montserrat {
   font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* background
@@ -17,6 +19,7 @@ cores de textos */
   --text-secondary-color: #ffffff;
 
   --text--family: "Montserrat", sans-serif;
+  --text-weight: 300px;
 }
 
 /* CSS RESET */
@@ -38,4 +41,25 @@ button {
 
 body {
   font-family: "montserrat", sans-serif;
+  color: var(--text-primary-color);
+}
+
+.section-title h2 {
+  font-size: 28px;
+  margin: 0;
+  color: var(--text-primary-color);
+  text-align: center;
+}
+
+.section-title hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--button-secondary-color);
+  border: none;
+  margin: 16px auto 32px;
+}
+@media screen and (min-width: 768px) {
+  .section-title h2 {
+    font-size: 32px;
+  }
 }
